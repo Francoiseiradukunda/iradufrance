@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@400;500;600;800;900&display=swap');
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    color:white;
+   font-family: 'Poppins', sans-serif;;
+}
+.logo{
+    font-size: 2.1rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,green,skyblue,yellow);
+border-radius:1.0rem;
+color: transparent;
+-webkit-background-clip: text;
+}
+nav{
+    background-color: rgb(122, 53, 53);
+    padding: .3rem;
+     display: flex;
+     justify-content: space-between;
+     text-transform: uppercase;
+     letter-spacing: .2rem;
+}
+.logo-container{
+  padding: 1.2rem;
+  color: blanchedalmond;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-links{
+   display: flex;
+   gap: 1.5rem;
+   font-size: 2rem;
+   list-style-type: none;
+   
+}
+
+.nav-link:link,
+.nav-link:visited{
+color: #eee;
+font-size: 1.6rem;
+text-decoration: none;
+transition: all 0.8s;
+}
+.nav-link:hover,
+.nav-link:active{
+   /* color:red;
+border-bottom: 2px solid yellow ; */
+}
+li:not(:last-child) .nav-link:hover,
+li:not(:last-child) .nav-link:active{
+    color:red;
+    border-bottom: 2px solid yellow; 
+}
+.btn-green:link,
+.btn-green:visited{
+    background-color: green;
+    color: black;
+    transition: all 0.3s;
+}
+.btn:link,
+.btn:visited{
+    padding: 1rem 3rem;
+    border-radius: 0.8rem;
+}
+.btn-green:hover,
+.btn-green:active{
+    background-color: aqua;
+}  

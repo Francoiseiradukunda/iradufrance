@@ -25,9 +25,13 @@ nav{
   padding: 2rem;
   display: flex;
   z-index: 9999;
-  position: relative;
+  position: fixed;
   box-shadow: 3px 3px 3px aqua;
   justify-content:space-between;
+  top: 0%;
+  left: 0%;
+  scroll-behavior: smooth;
+  width: 100%;
 }
 .logo-container{
   padding: 1.2rem;
@@ -83,8 +87,10 @@ li:not(:last-child) .nav-link:active{
     box-shadow: 2px 3px 3px rgba(255, 255, 255, 0.452);
 } 
 .home-container{
-    background-color: black;
+    background-color: rgb(44, 41, 41);
     height: 89.9vh;
+    background-image:url("/image/bg.png");
+    background-attachment: fixed;
 } 
 .home{
     display: flex;
@@ -111,14 +117,17 @@ li:not(:last-child) .nav-link:active{
 }
 .welcome-text p{
 font-size: 1.4rem;
-color: rgba(0, 255, 255, 0.61);
+color: rgba(0, 0, 0, 0.719);
 font-weight: 400;
 text-align: center;
+border-radius: .5rem;
+background-color: bisque;
 }
 .image-container{
    display: flex;
    height: 100%;
-   margin-right: 30%;
+   margin-right: 20%;
+   padding-top: 12rem ;
   
   
 }
@@ -139,15 +148,15 @@ border-radius: 100%;
    
 }
 .asalute{
-    color: rgb(129, 49, 49);
+    color: rgb(155, 37, 37);
 display: block;
 text-align: center;
 margin: .2rem;
 }
 .name{
-    background-color: rgb(38, 34, 80);
+    background-color: rgb(117, 113, 168);
     font-size: 1.5rem;
-    color: bisque;
+    color: rgb(196, 253, 255);
 border-radius: .5rem;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 letter-spacing: .3rem;
@@ -170,6 +179,143 @@ font-size: 1.6rem;
 border: 1px solid rgba(255, 0, 0, 0.199);
 transition: all .3s;
 }
-.btn-none:hover,.btn-none:active{
+.btn-none:hover,
+.btn-none:active{
 background-color: rgba(156, 176, 185, 0.226);
+}
+.headin-title{
+    font-size: 4.8rem;
+   font-weight: 700;
+  letter-spacing: 4px;
+  padding: 1rem;
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right,rgba(67, 175, 67, 0.685),rgba(77, 181, 223, 0.5),rgba(199, 199, 32, 0.767)); 
+  position:relative; 
+}
+.headin-title::before{
+content: '';
+bottom: 0%;
+left: 0%;
+height: 5px;
+width: 25%;
+background-image: linear-gradient(to letf,red, yellow, aqua);
+position: absolute;
+font-size: 1.2rem;
+}
+.headin-title::after{
+    content: '';
+    top: 0%;
+    left: 0%;
+    height: 5px;
+    width: 80%;
+    background-image: linear-gradient(to right,red,yellow,aqua);
+    position: absolute;
+    font-size: 1.2rem;
+}
+.img-bg{
+    background-image: linear-gradient(to left bottom,
+    red,aqua,yellow);
+}
+.about{
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text p{
+font-size: 1.8rem;
+margin-bottom: .3rem;
+margin-left: 20px;
+margin-top: 8px;
+/* background-color: red; */
+}
+.text-left{
+    text-align: left !important;
+
+}
+.about-image{
+    width: 90%;
+    padding: 3rem;
+    transition: all .3rem;
+    position: relative;
+    border: none;
+}
+.about-image:hover::before{
+    border: 1rem solid skyblue;
+    width: 100%;
+    height: 100%;
+}
+.about-image::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 2rem;
+    display: block;
+    border-left: 1rem solid aqua;
+    border-top: aqua;
+}
+.about-image::after{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0%;
+    right: 0%;
+    padding: 2rem;
+    border-right: 1rem solid aqua;
+    border-bottom: 1rem solid aqua;
+}
+.about-image img{
+    width: 100%;
+}
+.about-container{
+    background-color: rgb(70, 60, 60);
+    height: 100%;
+}
+.portifolio-container{
+    background-color: rgb(51, 49, 49);
+    width: 100%;
+    height: 150%;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 8rem;
+}
+.card{
+    background-color: #58787a;
+    border-radius: 0.8rem;
+    padding: 3rem;
+    box-shadow: 1px 3px 3px rgb(168, 88, 88);
+   transition: all .3re;
+}
+.card:hover{
+    background-color: rgb(56, 61, 61);
+    transform: translate(10px, -10px);
+}
+.card-container i{
+    font-size: 4.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.card-container h3{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem; 
+}
+.card-container p{
+    font-size: 1.4rem;
+
+}
+.link-portifolio:link,
+.link-portifolio:visited{
+color: rgb(36, 51, 51);
+text-decoration: none;
+font-size: 1.4rem;
+display: inline-block;
+margin-top: 2rem;
 }

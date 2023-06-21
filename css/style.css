@@ -64,6 +64,13 @@ li:not(:last-child) .nav-link:active{
     color:red;
     border-bottom: 2px solid yellow; 
 }
+.button-container{
+    background-color: #070707;
+    
+    background-image: linear-gradient(to left,rgb(75, 68, 68),rgb(50, 105, 105),rgb(47, 47, 109));
+    color: transparent;
+    -webkit-background-clip: text;
+}
 .btn-green:link,
 .btn-green:visited{
     background-color: green;
@@ -77,11 +84,13 @@ li:not(:last-child) .nav-link:active{
     display: inline-block;
     text-align: center;
     text-decoration: none;
+   
 }
 .btn-green:hover{
    transform: translateY(-3px);
    box-shadow: 2px 3px 3px rgba(252, 251, 253, 0.452);
-    }
+    
+}
 .btn:active{
     transform: translatey(-1px);
     box-shadow: 2px 3px 3px rgba(255, 255, 255, 0.452);
@@ -96,7 +105,7 @@ li:not(:last-child) .nav-link:active{
     display: flex;
   width: 100%;
   height: 100%;
-  justify-content: space-between;!important
+  justify-content: space-between !important;
 }
 .positioning{
     position: relative;
@@ -106,8 +115,10 @@ li:not(:last-child) .nav-link:active{
     position: absolute;
     left:30%;
     top: 50%;
-    transform: translate(0, -50p%);
-    /* background-color:red; */
+    transform: translate(0, -50%);
+    border: 4px solid blue;
+    padding: 2rem;
+    border-radius: .5rem;
 
 }
 .welcome-text h5{
@@ -187,7 +198,7 @@ background-color: rgba(156, 176, 185, 0.226);
     font-size: 4.8rem;
    font-weight: 700;
   letter-spacing: 4px;
-  padding: 1rem;
+  padding: 3rem;
   display: inline-block;
   color: transparent;
   -webkit-background-clip: text;
@@ -230,6 +241,7 @@ font-size: 1.8rem;
 margin-bottom: .3rem;
 margin-left: 20px;
 margin-top: 8px;
+padding: 2rem;
 /* background-color: red; */
 }
 .text-left{
@@ -285,6 +297,7 @@ margin-top: 8px;
     justify-content: space-between;
     gap: 3rem;
     margin-top: 8rem;
+    padding: 2rem;
 }
 .card{
     background-color: #58787a;
@@ -318,4 +331,252 @@ text-decoration: none;
 font-size: 1.4rem;
 display: inline-block;
 margin-top: 2rem;
+}
+.skills-container{
+    background-color: #557272;
+}
+.image-container{
+    display: flex;
+ /* width: 100%; */
+    margin-top: 2rem;
+justify-content: space-between;
+gap: 3rem;
+margin-left: 2rem;
+margin-right: 2rem;
+
+}
+.skills-card{
+    width: 700px;
+    max-height: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.skills-card img{
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: rgba(91, 85, 173, 0.384);
+
+}
+.skills-content:hover
+ .skills-content--content{
+    background-image: linear-gradient(to left bottom ,rgb(153, 87, 87) rgb(31, 104, 104) rgb(65, 57, 57));
+  color: transparent;
+    -webkit-background-clip: text;
+    display: flex;
+}
+@keyframes scroll {
+0%{
+    transform: translateY(100%);
+}    
+100%{
+    transform: translateY(0);
+}
+}
+.skills-content{
+    border-radius: 12px;
+    transition: all 10s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to left bottom,
+        rgba(0, 128, 0, 0.625),
+        rgba(147, 42, 42, 0.682)
+      ); 
+}
+.skills-content--content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 12px;
+    padding: 3rem;
+    transition: all 0.8s;
+    animation-name: scroll;
+    animation-duration: 1s;
+    backdrop-filter: blur;
+    justify-content: center;
+  
+}
+.skills-content--content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #c4b03b;
+    /* text-decoration: underline; */
+border-bottom: 2px solid rgb(68, 63, 63);
+background-image: linear-gradient(to right,rgb(102, 102, 23),rgb(134, 114, 114),rgb(66, 100, 66));
+color: transparent;
+-webkit-background-clip: text;
+}
+.skills-content--content p{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 700;
+}
+.skills-icon-container{
+    background-color: aliceblue;
+    display: block;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+.skills-content--content i{
+    font-size: 1.6rem;
+    cursor: pointer;
+    
+}
+.contact-container{
+    background-color: #383b3b;
+}
+.contact{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+.contact-left{
+ background-image: linear-gradient(to right top,rgb(117, 117, 70),rgb(44, 105, 44),rgb(38, 38, 105));   
+padding: 3rem;
+width: 40%;
+
+
+}
+.contact-left h3{
+    font-size: 2.4rem;
+}
+.contact-left p{
+    font-size: 1.6rem;
+}
+.text-welcome{
+    margin-top: 2rem;
+}
+.contact-left span{
+display: block;
+}
+.contact-right{
+ background-color: #58787a;   
+padding: 3rem;
+width: 45%;
+background-image: linear-gradient(to right bottom ,rgb(38, 38, 105),rgb(44, 105, 44),rgb(117, 117, 70));
+}
+.contact-right h3{
+    font-size: 2.4rem;
+    text-align: right;
+    font-weight: 500;
+}
+.social-media{
+    margin-top: 2rem;
+}
+.media-icon{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.media-icon i{
+    font-size: 1.8rem;
+}
+.media-icon h3{
+    font-size: 1.8rem;
+}
+.media-icon p{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.media-icon span{
+    display: block;
+}
+.social-media-icons-links{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.social-media-icons-links{
+    font-size: 1.8rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    justify-content: center;
+}
+input,textarea{
+    padding: 1.5rem;
+}
+.btn-red:link,
+.btn-red:visited{
+background-color: rgb(141, 54, 54);
+color: white;
+font-size: 1.5rem;
+font-size: 1.5rem;
+transition: all 0.3s;
+}
+.btn-red:hover,
+.btn-red:active{
+    background-color: rgb(47, 112, 47);
+}
+.footer-container{
+    background-color: gray;
+    padding: 2rem;
+    text-align: center;
+}
+.footer-container p{
+    font-size: 1.6rem;
+}
+.link-media-fixed{
+ position: fixed;
+ display: flex; 
+ align-items: flex-end;
+ justify-content: center;
+ flex-direction: column;
+ bottom: 0;
+ text-align: center;
+ gap: 2rem;
+ left: 2rem;  
+}
+.git{
+    font-size: 1.8rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.sec;
+}
+.git:hover{
+    color: rgb(35, 87, 35);
+    transform: translate(3px, -5px);
+}
+.links-media-fixed::after,
+.email-link-fixed::after{
+    content: "";
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 150px;
+    width: 3px;
+    background-color: #eee;
+}
+.email-link-fixed{
+text-align: center;
+right: 2%;
+position: fixed;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+bottom: 0;
+}
+.email-link-fixed p{
+    -webkit-writing-mode:vertical-rl;
+    font-size: 1.6rem;
 }

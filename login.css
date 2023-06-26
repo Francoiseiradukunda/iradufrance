@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(88, 88, 248);
+}
+/* .login-container{
+    
+   } */
+.form{
+    /* background-color: white; */
+    
+}
+.field{
+   /* background-color: red; */
+   display: flex;
+   justify-content: space-evenly;
+ 
+   
+}
+.field login{
+  
+}
+.signup{
+    height: 83vh;
+    background-color: rgb(231, 226, 226);
+    text-align: center;
+    border-radius: .3rem;
+}
+.login{
+    background-color: rgb(233, 225, 225);
+    width: 25%;
+    height: 40vh;
+    text-align: center;
+   margin-top: 8rem;
+   border-radius: .3rem;
+   margin-right: 20%;
+}
+.signup input{
+    border-radius: .2rem;
+    border: 1px solid gray;
+    margin-right: 3rem;
+}
+.login input{
+    border-radius: .2rem;
+    border: 1px solid gray;
+    margin-right: 3rem;
+}
+.signup label{
+    margin-right: 10rem; 
+}
+.Confirm{
+    margin-right: 7rem !important; 
+}
+.email{
+    margin-right: 12rem !important; 
+}
+.password{
+    margin-right: 11rem !important;  
+}
+.Lastname{
+    margin-right: 11rem !important;
+}
+.login label{
+    margin-right: 12rem; 
+}
+.Password{
+    margin-right: 11rem !important; 
+}
+.btn{
+    background-color: rgb(116, 168, 116);
+    width: 72%;
+}
+.up{
+    color: rgb(102, 192, 102);
+}
+.here{
+    color: rgb(102, 192, 102);
+}

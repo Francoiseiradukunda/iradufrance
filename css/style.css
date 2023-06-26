@@ -19,33 +19,36 @@ body{
 border-radius:1.0rem;
 color: transparent;
 -webkit-background-clip: text;
+transition: all .3s;
+cursor: pointer;
 }
 nav{
     background-color: #5f9599;
   padding: 2rem;
   display: flex;
   z-index: 9999;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   box-shadow: 3px 3px 3px aqua;
   justify-content:space-between;
   top: 0%;
-  left: 0%;
   scroll-behavior: smooth;
   width: 100%;
   align-items: center;
 }
-.logo-container{
+/* .logo-container{
   padding: 1.2rem;
   color: blanchedalmond;
   font-size: 2rem;
   font-weight: bold;
-}
+  align-items: center;
+} */
 .nav-links{
    display: flex;
    gap: 1.5rem;
    font-size: 2rem;
    list-style-type: none;
-   
+   align-items: center;
 }
 
 .nav-link:link,
@@ -99,9 +102,8 @@ li:not(:last-child) .nav-link:active{
 } 
 .home-container{
     background-color: rgb(44, 41, 41);
-    height: 89.9vh;
-    background-image:url("/image/bg.png");
-    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
 } 
 .home{
     display: flex;
@@ -141,7 +143,7 @@ background-color: bisque;
    height: 100%;
    margin-right: 20%;
    padding-top: 12rem ;
-  
+  border-radius: 50%;
   
 }
 .image-container img{
@@ -154,6 +156,7 @@ border-radius: 100%;
     /* transform: rotate(-180deg); when we are using this css
     image take another direction,and use on child*/
   transition: all .3s;
+  width: 100%;
    
 }
 .image-container img:hover{
@@ -581,4 +584,21 @@ bottom: 0;
 .email-link-fixed p{
     -webkit-writing-mode:vertical-rl;
     font-size: 1.6rem;
+}
+.login-container{
+    background-color: black;
+}
+.input{
+    text-align: center;
+}
+.legend{
+    text-align: center;
+    font-size: 2rem;
+    color: blue;
+}
+.fieldset{
+    width: 70px;
+    padding: 50px 50px;
+    background-color: #c4b03b;
+    
 }

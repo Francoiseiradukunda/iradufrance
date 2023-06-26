@@ -602,3 +602,27 @@ bottom: 0;
     background-color: #c4b03b;
     
 }
+.bloge-container{
+    background-color: #1d1b1b;
+}
+.image-text{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.blog-text{
+    font-size: 2rem;
+    margin-top: 13rem;
+    font-weight: 800;
+    font-style: italic;
+}
+.image-containers{
+    margin-right: 12rem;
+}
+.more{
+    color: #58787a;
+}
+a{
+    color: rgb(73, 126, 71);
+    text-decoration: underline;
+}
